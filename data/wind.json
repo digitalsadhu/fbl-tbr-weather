@@ -1,0 +1,31 @@
+[
+    {
+        "description": "Light Breeze",
+        "cold": 0,
+        "effects": []
+    },
+    {
+        "description": "Strong Wind",
+        "cold": 1,
+        "effects": [ 
+            {
+                "title": "MAKE CAMP",
+                "description": "-1 to all attempts to MAKE CAMP"
+            }
+        ]
+    },
+    {
+        "description": "Storm",
+        "cold": 2,
+        "effects": [
+            { 
+                "title": "MAKE CAMP",
+                "description": "-2 to all attempts to MAKE CAMP"
+            },
+            { 
+                "title": "HIKE",
+                "description": "All PCs must succeed on an ENDURANCE roll to be able to HIKE for a Quarter Day."
+            }
+        ]
+    }
+]

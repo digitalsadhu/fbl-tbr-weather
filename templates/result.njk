@@ -1,0 +1,26 @@
+{% extends "templates/page.njk" %}
+        
+{% block content %}
+    <a href="/weather/result">Generate Again</a>
+    <h2>Today's Weather is...</h2>
+    <ul>
+        <li><strong>Wind</strong> <em>{{ wind.description }}</em></li>
+        <li><strong>Snow</strong> <em>{{ snow.description }}</em></li>
+        <li><strong>Cold</strong> <em>{{ cold.description }}</em></li>
+    </ul>
+
+    <h2>The mechanical effects of this are...</h2>
+    <ul>
+        {% for effect in wind.effects %}
+        <li><strong>{{ effect.title }}</strong> <em>{{ effect.description }}</em></li>
+        {% endfor %}
+
+        {% for effect in snow.effects %}
+        <li><strong>{{ effect.title }}</strong> <em>{{ effect.description }}</em></li>
+        {% endfor %}
+
+        {% for effect in cold.effects %}
+        <li><strong>{{ effect.title }}</strong> <em>{{ effect.description }}</em></li>
+        {% endfor %}
+    </ul>
+{% endblock %}

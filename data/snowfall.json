@@ -1,0 +1,36 @@
+[
+    {
+        "description": "No Snow",
+        "effects": []
+    },
+    {
+        "description": "Light Flurry",
+        "effects": [
+            {
+                "title": "LEAD THE WAY",
+                "description": "-1 to LEAD THE WAY"
+            }
+        ]
+    },
+    {
+        "description": "Heavy Snowfall",
+        "effects": [
+            {
+                "title": "LEAD THE WAY",
+                "description": "-2 to LEAD THE WAY"
+            },
+            {
+                "title": "HIKE",
+                "description": "All PCs must succeed at an ENDURANCE roll to be able to HIKE for a Quarter Day"
+            },
+            {
+                "title": "HIKE",
+                "condition": {
+                    "type": "wind",
+                    "value": "storm"
+                },
+                "description": "ENDURANCE roll make to HIKE must be made at -2 due to storm"
+            }
+        ]
+    }
+]
