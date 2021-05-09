@@ -7,7 +7,11 @@ const app = fastify();
 
 app.register(pov, { engine: { nunjucks } });
 
-app.get("/weather", async (request, reply) => {
+app.get("/", (request, reply) => {
+  reply.send('ok');
+});
+
+app.get("/weather", (request, reply) => {
   reply.view('templates/weather.njk');
 });
 
