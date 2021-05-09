@@ -19,8 +19,11 @@
         <li><strong>{{ effect.title }}</strong> <em>{{ effect.description }}</em></li>
         {% endfor %}
 
-        {% for effect in cold.effects %}
-        <li><strong>{{ effect.title }}</strong> <em>{{ effect.description }}</em></li>
+        {% for caveat in cold.caveats %}
+            <h3>{{ caveat.title }}</h3>
+            {% for effect in caveat.effects %}
+                <li><strong>{{ effect.title }}</strong> <em>{{ effect.description }}</em></li>
+            {% endfor %}
         {% endfor %}
     </ul>
 {% endblock %}
