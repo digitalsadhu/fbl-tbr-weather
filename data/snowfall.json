@@ -8,7 +8,7 @@
         "effects": [
             {
                 "title": "LEAD THE WAY",
-                "description": "-1 to LEAD THE WAY"
+                "description": "-1 modifier"
             }
         ]
     },
@@ -17,19 +17,19 @@
         "effects": [
             {
                 "title": "LEAD THE WAY",
-                "description": "-2 to LEAD THE WAY"
+                "description": "-2 modifier"
             },
             {
                 "title": "HIKE",
-                "description": "All PCs must succeed at an ENDURANCE roll to be able to HIKE for a Quarter Day"
+                "description": "ENDURANCE roll required"
             },
             {
                 "title": "HIKE",
                 "condition": {
                     "type": "wind",
-                    "value": "storm"
+                    "value": "Storm"
                 },
-                "description": "ENDURANCE roll make to HIKE must be made at -2 due to storm"
+                "description": "at -2 due to storm"
             }
         ]
     }

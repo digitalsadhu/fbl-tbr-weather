@@ -3,44 +3,28 @@
     "description": "Cold",
     "caveats": [
       {
-        "title": "PC Does not have warm clothing",
-        "effects": [
+        "actions": ["HIKE", "FORAGE", "HUNT", "FISH", "MAKE CAMP", "EXPLORE"],
+        "conditions": [
           {
-            "title": "HIKE",
-            "description": "Every PC without adequate protection against the cold must make an ENDURANCE roll every Quarter Day to not become COLD."
+            "explanation": "Have warm clothes",
+            "frequency": "-"
           },
           {
-            "title": "FORAGE",
-            "description": "Every PC without adequate protection against the cold must make an ENDURANCE roll every Quarter Day to not become COLD."
-          },
-          {
-            "title": "HUNT",
-            "description": "Every PC without adequate protection against the cold must make an ENDURANCE roll every Quarter Day to not become COLD."
-          },
-          {
-            "title": "FISH",
-            "description": "Every PC without adequate protection against the cold must make an ENDURANCE roll every Quarter Day to not become COLD."
-          },
-          {
-            "title": "MAKE CAMP",
-            "description": "Every PC without adequate protection against the cold must make an ENDURANCE roll every Quarter Day to not become COLD."
-          },
-          {
-            "title": "EXPLORE",
-            "description": "Every PC without adequate protection against the cold must make an ENDURANCE roll every Quarter Day to not become COLD."
+            "explanation": "Do not have warm clothes",
+            "frequency": "Quarter Day"
           }
         ]
       },
       {
-        "title": "Party does not have a camp fire",
-        "effects": [
+        "actions": ["REST", "SLEEP"],
+        "conditions": [
           {
-            "title": "REST",
-            "description": "Every PC without adequate protection against the cold must make an ENDURANCE roll every Quarter Day to not become COLD."
+            "explanation": "Have a campfire",
+            "frequency": "-"
           },
           {
-            "title": "SLEEP",
-            "description": "Every PC without adequate protection against the cold must make an ENDURANCE roll every Quarter Day to not become COLD."
+            "explanation": "Do not have a campfire",
+            "frequency": "Quarter Day"
           }
         ]
       }
@@ -50,44 +34,28 @@
     "description": "Biting",
     "caveats": [
       {
-        "title": "PC Does not have warm clothing",
-        "effects": [
+        "actions": ["HIKE", "FORAGE", "HUNT", "FISH", "MAKE CAMP", "EXPLORE"],
+        "conditions": [
           {
-            "title": "HIKE",
-            "description": "Every PC without adequate protection against the cold must make an ENDURANCE roll every Quarter Hour to not become COLD."
+            "explanation": "Have warm clothes",
+            "frequency": "-"
           },
           {
-            "title": "FORAGE",
-            "description": "Every PC without adequate protection against the cold must make an ENDURANCE roll every Quarter Hour to not become COLD."
-          },
-          {
-            "title": "HUNT",
-            "description": "Every PC without adequate protection against the cold must make an ENDURANCE roll every Quarter Hour to not become COLD."
-          },
-          {
-            "title": "FISH",
-            "description": "Every PC without adequate protection against the cold must make an ENDURANCE roll every Quarter Hour to not become COLD."
-          },
-          {
-            "title": "MAKE CAMP",
-            "description": "Every PC without adequate protection against the cold must make an ENDURANCE roll every Quarter Hour to not become COLD."
-          },
-          {
-            "title": "EXPLORE",
-            "description": "Every PC without adequate protection against the cold must make an ENDURANCE roll every Quarter Hour to not become COLD."
+            "explanation": "Do not have warm clothes",
+            "frequency": "Quarter Hour"
           }
         ]
       },
       {
-        "title": "Party does not have a camp fire",
-        "effects": [
+        "actions": ["REST", "SLEEP"],
+        "conditions": [
           {
-            "title": "REST",
-            "description": "Every PC without adequate protection against the cold must make an ENDURANCE roll every Quarter Hour to not become COLD."
+            "explanation": "Have a campfire",
+            "frequency": "-"
           },
           {
-            "title": "SLEEP",
-            "description": "Every PC without adequate protection against the cold must make an ENDURANCE roll every Quarter Hour to not become COLD."
+            "explanation": "Do not have a campfire",
+            "frequency": "Quarter Hour"
           }
         ]
       }
@@ -97,91 +65,30 @@
     "description": "To The Bone",
     "caveats": [
       {
-        "title": "PC has warm clothing",
-        "effects": [
+        "actions": ["HIKE", "FORAGE", "HUNT", "FISH", "MAKE CAMP", "EXPLORE"],
+        "conditions": [
           {
-            "title": "HIKE",
-            "description": "Even PCs with adequate protection against the cold must make an ENDURANCE roll every Quarter Day to not become COLD."
+            "explanation": "Have warm clothes",
+            "frequency": "Quarter Day"
           },
           {
-            "title": "FORAGE",
-            "description": "Even PCs with adequate protection against the cold must make an ENDURANCE roll every Quarter Day to not become COLD."
-          },
-          {
-            "title": "HUNT",
-            "description": "Even PCs with adequate protection against the cold must make an ENDURANCE roll every Quarter Day to not become COLD."
-          },
-          {
-            "title": "FISH",
-            "description": "Even PCs with adequate protection against the cold must make an ENDURANCE roll every Quarter Day to not become COLD."
-          },
-          {
-            "title": "MAKE CAMP",
-            "description": "Even PCs with adequate protection against the cold must make an ENDURANCE roll every Quarter Day to not become COLD."
-          },
-          {
-            "title": "EXPLORE",
-            "description": "Even PCs with adequate protection against the cold must make an ENDURANCE roll every Quarter Day to not become COLD."
+            "explanation": "Do not have warm clothes",
+            "frequency": "Quarter Hour",
+            "modifier": -2
           }
         ]
       },
       {
-        "title": "PC Does not have warm clothing",
-        "effects": [
+        "actions": ["REST", "SLEEP"],
+        "conditions": [
           {
-            "title": "HIKE",
-            "description": "Every PC without adequate protection against the cold must make an ENDURANCE roll with a -2 modifier every Quarter Hour to not become COLD."
+            "explanation": "Have a campfire",
+            "frequency": "Quarter Day"
           },
           {
-            "title": "FORAGE",
-            "description": "Every PC without adequate protection against the cold must make an ENDURANCE roll with a -2 modifier every Quarter Hour to not become COLD."
-          },
-          {
-            "title": "HUNT",
-            "description": "Every PC without adequate protection against the cold must make an ENDURANCE roll with a -2 modifier every Quarter Hour to not become COLD."
-          },
-          {
-            "title": "FISH",
-            "description": "Every PC without adequate protection against the cold must make an ENDURANCE roll with a -2 modifier every Quarter Hour to not become COLD."
-          },
-          {
-            "title": "MAKE CAMP",
-            "description": "Every PC without adequate protection against the cold must make an ENDURANCE roll with a -2 modifier every Quarter Hour to not become COLD."
-          },
-          {
-            "title": "EXPLORE",
-            "description": "Every PC without adequate protection against the cold must make an ENDURANCE roll with a -2 modifier every Quarter Hour to not become COLD."
-          }
-        ]
-      },
-
-      {
-        "title": "Party has a camp fire",
-        "effects": [
-          {
-            "title": "REST",
-            "caveat": "Party has a camp fire",
-            "description": "Even PCs with adequate protection against the cold must make an ENDURANCE roll every Quarter Day to not become COLD."
-          },
-          {
-            "title": "SLEEP",
-            "caveat": "Party has a camp fire",
-            "description": "Even PCs with adequate protection against the cold must make an ENDURANCE roll every Quarter Day to not become COLD."
-          }
-        ]
-      },
-      {
-        "title": "Party does not have a camp fire",
-        "effects": [
-          {
-            "title": "REST",
-            "caveat": "Party does not have a camp fire",
-            "description": "Every PC without adequate protection against the cold must make an ENDURANCE roll with a -2 modifier every Quarter Hour to not become COLD."
-          },
-          {
-            "title": "SLEEP",
-            "caveat": "Party does not have a camp fire",
-            "description": "Every PC without adequate protection against the cold must make an ENDURANCE roll with a -2 modifier every Quarter Hour to not become COLD."
+            "explanation": "Do not have a campfire",
+            "frequency": "Quarter Hour",
+            "modifier": -2
           }
         ]
       }

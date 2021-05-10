@@ -42,7 +42,30 @@ const roller = () => {
   const snowfallRoll = rollSnowfall();
   const coldRoll = rollCold(windRoll.cold);
 
-  return { wind: windRoll, snow: snowfallRoll, cold: coldRoll };
+  const effects = new Map();
+
+  for (const effect of windRoll.effects) {
+    effects.set(effect.title, effect);
+  }
+
+  for (const { title, description, condition } of snowfallRoll.effects) {
+    if (!effects.has(title)) effects.set(title, { title, description });
+    else {
+      if (condition && condition.value === windRoll.description) {
+        effects.set(title, {
+          title,
+          description: `${effects.get(title).description} ${description}`,
+        });
+      }
+    }
+  }
+
+  return {
+    wind: windRoll,
+    snow: snowfallRoll,
+    effects: Array.from(effects.values()),
+    cold: coldRoll,
+  };
 };
 
 export default roller;
